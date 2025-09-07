@@ -1,0 +1,9 @@
+for i in range(len(temperaturas)):  # Recorrer ciudades
+    print(f"\nPromedios de temperatura en {ciudades[i]}:")
+    for j in range(len(temperaturas[i])):  # Recorrer semanas
+        suma = 0
+        for k in range(len(temperaturas[i][j])):  # Recorrer días
+            suma += temperaturas[i][j][k]
+        
+        promedio = suma / len(temperaturas[i][j])
+        print(f"  Semana {j+1}: {promedio:.2f} °C")
