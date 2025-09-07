@@ -1,0 +1,5 @@
+for i in range(len(temperaturas)):  # Ciudades
+    print(f"\nProcesando datos de {ciudades[i]}:")
+    for j in range(len(temperaturas[i])):  # Semanas
+        for k in range(len(temperaturas[i][j])):  # Días
+            print(f"Ciudad: {ciudades[i]}, Semana: {j+1}, Día: {k+1}, Temp: {temperaturas[i][j][k]} °C")
